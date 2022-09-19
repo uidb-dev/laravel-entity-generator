@@ -9,7 +9,7 @@ Laravel 5.5 repository design pattern generator with SOA(Service Oriented Arcite
 ## Installation
 
 ```php
-composer require ybaruchel/laravel-entity-generator
+composer require uidb-dev/laravel-entity-generator
 ```
 
 ## Usage
