@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Repositories\Dummy;
+
+use Illuminate\Database\Eloquent\Model;
+
+class DummyRepository implements DummyInterface
+{
+    protected $dummyModel;
+
+    public function __construct(Model $dummy)
+    {
+        $this->dummyModel = $dummy;
+    }
+
+    public function getById($dummyId)
+    {
+        return $this->dummyModel->find($dummyId);
+    }
+}

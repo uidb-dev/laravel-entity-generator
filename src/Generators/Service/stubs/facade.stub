@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Services\Dummy;
+
+use \Illuminate\Support\Facades\Facade;
+
+class DummyFacade extends Facade {
+
+    /**
+     * Get the registered name of the component. This tells $this->app what record to return
+     * (e.g. $this->app[‘dummyService’])
+     *
+     * @return string
+     */
+    protected static function getFacadeAccessor() { return 'dummyService'; }
+
+}

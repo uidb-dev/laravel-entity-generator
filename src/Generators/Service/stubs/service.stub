@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Services\Dummy;
+
+use App\Repositories\Dummy\DummyInterface;
+
+class DummyService
+{
+    protected $dummyRepo;
+
+    public function __construct(DummyInterface $dummyRepo)
+    {
+        $this->dummyRepo = $dummyRepo;
+    }
+
+    public function get($dummyId)
+    {
+        return $this->dummyRepo->getById($dummyId);
+    }
+}

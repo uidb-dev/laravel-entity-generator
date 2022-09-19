@@ -1,0 +1,16 @@
+<?php
+
+namespace App\Repositories\Dummy;
+
+use App\Models\Entities\Dummy;
+use Illuminate\Support\ServiceProvider;
+
+class DummyRepositoryServiceProvider extends ServiceProvider
+{
+    public function register()
+    {
+        $this->app->bind('App\Repositories\Dummy\DummyInterface', function($app) {
+            return new DummyRepository(new Dummy());
+        });
+    }
+}
