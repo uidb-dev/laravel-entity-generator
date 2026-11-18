@@ -3,7 +3,7 @@
   "description": "Entity generator for service repository pattern",
   "type": "library",
   "require": {
-    "laravel/framework": "^v11.16.0",
+    "laravel/framework": "^v12.0.0",
     "php": "^8.1.0"
   },
   "license": "MIT",
